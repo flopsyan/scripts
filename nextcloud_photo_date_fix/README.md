@@ -11,4 +11,4 @@
    Then, add the following line to your crontab (replace `YOUR_PATH_HERE` with the path you used in the previous step):
 
    ```bash
-   * * * * * YOUR_PATH_HERE/nextcloud_photo_date_fix.sh >> /var/log/nextcloud_photo_date_fix.log 2>&1
+   0 * * * * YOUR_PATH_HERE/nextcloud_photo_date_fix.sh >> /var/log/nextcloud_photo_date_fix.log 2>&1

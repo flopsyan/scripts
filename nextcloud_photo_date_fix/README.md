@@ -6,7 +6,7 @@
    Move the file to a location of your choice (e.g., `/usr/local/bin/`).
 
 3. **Configure the cron job**  
-   Open your root crontab (by running `sudo crontab -e`)
+   Open your root crontab (by running `sudo crontab -e`).
 
    Then, add the following line to your crontab (replace `YOUR_PATH_HERE` with the path you used in the previous step):
 

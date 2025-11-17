@@ -21,4 +21,4 @@ OCC_PATH=""    # full path to occ inside the container (e.g. /var/www/html/occ)
 find "$PHOTO_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -mmin "-$LOOKBACK" -exec exiftool -overwrite_original_in_place -if 'defined $DateTimeOriginal' -m -P -q '-FileModifyDate<DateTimeOriginal' {} +
 
 # scans the Nextcloud files to apply the changes
-docker exec -u www-data "$CONTAINER" php -f "$OCC_PATH" files:scan "$NC_USER" --path="/$NC_USER/files/Photos" --quiet
+docker exec -u www-data "$CONTAINER" php -f "$OCC_PATH" files:scan "$NC_USER" --path="$PHOTO_DIR" --quiet

@@ -1,6 +1,6 @@
 # --- Config ---
 HETZNER_CLOUD_API_TOKEN="<INSERT-HETZNER-API-TOKEN-HERE"
-ZONE_NAME="flopsyan.eu"
+ZONE_NAME="<INSERT-DNS-ZONE-HERE-(USUALLY-DOMAIN)>"
 RECORD_NAME="dyndns"
 # --------------
 

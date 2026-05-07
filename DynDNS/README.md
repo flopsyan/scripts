@@ -12,8 +12,8 @@ The **systemd timer interval** or **cron** (that you have to create by yourself)
 
 ## Requirements
 - Any linux distribution with `bash` and `curl` (AlpineOS, Debian, ...)
-- A Hetzner account with a DNS zone migrated to Hetzner Console
-- A Hetzner Cloud API token with DNS read/write permissions (open DNS zone > "Security" > "API tokens")
+- A Hetzner account with a (Console) DNS zone
+- A Hetzner Cloud API token with read/write permissions (open DNS zone > "Security" > "API tokens")
 
 ## Configuration
 Set the following variables at the top of `dyndns-update.sh`:
